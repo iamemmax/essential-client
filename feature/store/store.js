@@ -3,6 +3,7 @@ import authReducer from "../slice/userSlice"
 import usersReducer from "../slice/users"
 import chatReducer from "../slice/listchat"
 import postReducer from "../slice/postSlice"
+import newChatReducer from "../slice/chatSlice"
 import storage from "redux-persist/lib/storage";
 import {
     // persistStore,
@@ -21,7 +22,8 @@ const allReducer = combineReducers({
     auth: authReducer,
     users: usersReducer,
     chat: chatReducer,
-    post: postReducer
+    post: postReducer,
+    newChat:newChatReducer
 
 
 

@@ -7,7 +7,7 @@ function Header() {
         <div>
             <nav className={Styles.nav}>
                 <div  className={Styles.nav}>
-                    <Link href="/come">E-Companion</Link>
+                    <Link href="/">E-Companion</Link>
 
                 </div>
                 <ul  className={Styles.ul}>

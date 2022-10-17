@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Children } from 'react'
 import Styles from "./styles/layout.module.scss"
 import Header from './Header';
 import LeftBox from './LeftBox';
-import SingleChat from './SingleChat';
 
-function Layouts() {
+
+function Layouts({children}) {
     return (
         <div className={Styles.wrapper}>
             <div className={Styles.header}>
@@ -14,7 +14,7 @@ function Layouts() {
                 <LeftBox />
             </div>
             <div className={Styles.mainBox}>
-                <SingleChat />
+                {children}
             </div>
 
         </div>
