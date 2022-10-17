@@ -1,0 +1,138 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 60px 1fr 1fr;
+
+
+    .header {
+        grid-column: 1/-1;
+        background-color: #555;
+        color: #fff;
+
+        a {
+
+
+            color: #fff;
+
+
+        }
+
+        .nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            ul {
+                a {
+                    margin: 10px;
+                    font-size: 1rem;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    text-transform: capitalize;
+                    color: #fff;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .leftBox {
+        border-right: 2px solid green;
+        overflow: auto;
+        grid-row: 2/-1;
+        height: auto
+    }
+
+    .mainBox {
+        // border: 2px solid orange;
+        overflow: auto;
+        grid-row: 2/-1;
+        height: auto;
+        grid-column: 2/-1;
+    }
+
+
+    .chatWrapper {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 70px;
+
+        .chatBox {
+            // border: 2px solid green;
+            grid-column: 1/-1;
+            overflow: auto;
+            height: auto;
+        }
+
+        .chatInput {
+            background: #eee;
+            width: 100%;
+            grid-column: 1/-1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 1rem;
+            margin-bottom: 10px;
+
+
+
+
+            form {
+                flex: 2;
+                margin: 0px 2rem;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 50px;
+                    // -webkit-border-radius: 50px 0px 0px 50px;
+                    // -moz-border-radius: 50px 0px 0px 50px;
+                    // -ms-border-radius: 50px 0px 0px 50px;
+                    // -o-border-radius: 50px 0px 0px 50px;
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    //background: #fff;
+                    //padding: 10px;
+                    position: absolute;
+                    right: 1rem;
+                    background: unset;
+                    top: 10%;
+                    transform: translate(-50% -50%);
+                    //border-radius: 0px 50px 50px 0px;
+                    -webkit-transform: translate(-50% -50%);
+                    -moz-transform: translate(-50% -50%);
+                    -ms-transform: translate(-50% -50%);
+                    -o-transform: translate(-50% -50%);
+
+                    .sendIcon {
+
+                        font-size: 35px;
+                    }
+
+                    // -webkit-border-radius: 0px 50px 50px 0px;
+                    // -moz-border-radius: 0px 50px 50px 0px;
+                    // -ms-border-radius: 0px 50px 50px 0px;
+                    // -o-border-radius: 0px 50px 50px 0px;
+
+
+                }
+            }
+
+        }
+    }
+
+}
